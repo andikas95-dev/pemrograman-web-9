@@ -31,9 +31,23 @@
       <div style="display: flex; flex-direction: column; gap: 0.5rem;">
         <input type="text" placeholder="Name" style="padding: 0.5rem; border: 1px solid #333; border-radius: 0.25rem;"/>
         <input type="email" placeholder="Email" style="padding: 0.5rem; border: 1px solid #333; border-radius: 0.25rem;"/>
-        <div>
-          <label for="">Keperluan</label>
-          
+        <div style="align-self: flex-start;">
+          <label for="keperluan">Keperluan: </label>
+              <input type="radio" id="informasi" name="keperluan" value="Informasi">
+              <label for="informasi">Informasi</label>
+              <input type="radio" id="keluhan" name="keperluan" value="Keluhan">
+              <label for="keluhan">Keluhan</label>
+              <input type="radio" id="laporan" name="keperluan" value="Laporan">
+              <label for="laporan">Laporan</label>
+        </div>
+        <div style="align-self: flex-start;">
+          <label for="hubungi">Bisa dihubungi melalui: </label>
+            <input type="checkbox" id="email" name="email" value="Email">
+            <label for="email">Email</label>
+            <input type="checkbox" id="phone" name="phone" value="Telepon">
+            <label for="phone"> </label>
+            <input type="checkbox" id="kunjungan-kantor" name="kunjungan-kantor" value="Kunjungan Kantor">
+            <label for="kunjungan-kantor">Kunjungan Kantor</label>
         </div>
         <textarea name="" id="" cols="30" rows="10" placeholder="Message" style="padding: 0.5rem; border: 1px solid #333; border-radius: 0.25rem;"></textarea>
         <button type="submit" style="padding: 0.5rem; border: 1px solid #333; border-radius: 0.25rem; background-color: #333; color: #fff; cursor: pointer;">Send</button>
